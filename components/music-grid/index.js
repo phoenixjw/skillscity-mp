@@ -72,20 +72,20 @@ export default function MusicGrid(){
         <form className = "mt-5">
           <label className = "mr-3"></label>
           <input 
-            className = "border border-purple-900 mr-1 px-3 py-1 rounded-md"
+            className = "border border-gray-900 mr-1 px-3 py-1 rounded-md"
             value = {title}
             onChange = {handleSetTitle}
             placeholder="Title"
           />
           <label className = "mr-3 ml-2"></label>
           <input 
-            className = "border border-purple-900 mr-1 px-3 py-1 rounded-md"
+            className = "border border-gray-900 mr-1 px-3 py-1 rounded-md"
             value = {artist}
             onChange = {handleSetArtist}
             placeholder ="Artist"
           />
           <button
-            className = "bg-purple-900 rounded-md px-3 py-1 text-white ml-3"
+            className = "bg-gray-900 rounded-md px-3 py-1 text-white ml-3"
             type = "button"
             onClick = {handleAddSong}
           >

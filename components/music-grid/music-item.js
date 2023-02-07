@@ -18,12 +18,12 @@ export default function MusicItem({title, artist, onLike}){
   
   return(
     <div>
-      <div className = "grid grid-rows w-full text-center bg-slate-100 py-1 px-3">
+      <div className = "grid grid-rows w-full text-center bg-gray-100 py-1 px-3">
         <p className = "text-l font-medium mb-1 pt-5">{title}</p>
         <p className = "text-s italic mb-5">{artist}</p>
-        <p className = "text-center text-purple-800 font-bold">{likes} likes</p>
+        <p className = "text-center text-gray-800 font-bold">{likes} likes</p>
         <button 
-          className = "bg-purple-900 text-white px-3 py-1"
+          className = "bg-gray-900 text-white px-3 py-1"
           onClick={handleIncrementLike}
           
         >Like</button>
