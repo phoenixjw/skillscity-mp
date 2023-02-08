@@ -8,7 +8,8 @@ export default function MusicItem({title, artist, onLike}){
     let details = {
       title: title,
       artist: artist,
-      likes: newValue
+      likes: newValue,
+
     }
     
     onLike(details);
@@ -19,6 +20,7 @@ export default function MusicItem({title, artist, onLike}){
   return(
     <div>
       <div className = "grid grid-rows w-full text-center bg-gray-100 py-1 px-3">
+        <img className ="rounded-lg"/>
         <p className = "text-l font-medium mb-1 pt-5">{title}</p>
         <p className = "text-s italic mb-5">{artist}</p>
         <p className = "text-center text-gray-800 font-bold">{likes} likes</p>
