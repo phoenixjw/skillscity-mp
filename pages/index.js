@@ -20,17 +20,17 @@ export function Home() {
   <div className="w-full">
   <div className="w-full max-w-6xl mx-auto">
     <NavigationBar></NavigationBar>
-    <Hero name = "Phoenix Warburton - Mini Project" imgURL="/phoenixProP.jpg" subtitle="I am a bootcamp learner."></Hero>
+    <Hero imgURL="/phoenixProP.jpg" name = "Phoenix Warburton - Mini Project"  subtitle="I am a bootcamp learner."></Hero>
     <Bio></Bio>
     <Content>
       <Topics></Topics>
 
     </Content>
-    <Topic></Topic>
+   
     <br></br>
 
     <button 
-    className="items-center bg-blue-500"
+    className="items-center bg-blue-500 rounded-lg"
     onClick={handleClick}
     >
       Click Me!
