@@ -1,35 +1,33 @@
 import {useState} from "react";
+import Link from "next/link";
 
-export default function MusicItem({title, artist, onLike}){
-  const [likes, setLikes] = useState(0)
+export default function MusicItem({tune}){
+  const [likes, setLikes] = useState(+tune.likes)
 
-  const handleIncrementLike = () => {
-    let newValue = likes + 1;
-    let details = {
-      title: title,
-      artist: artist,
-      likes: newValue,
 
-    }
-    
-    onLike(details);
-    
-    setLikes(newValue);
-  }
-  
-  return(
-    <div>
-      <div className = "grid grid-rows w-full text-center bg-gray-100 py-1 px-3">
-        <img className ="rounded-lg"/>
-        <p className = "text-l font-medium mb-1 pt-5">{title}</p>
-        <p className = "text-s italic mb-5">{artist}</p>
-        <p className = "text-center text-gray-800 font-bold">{likes} likes</p>
-        <button 
-          className = "bg-gray-900 text-white px-3 py-1"
-          onClick={handleIncrementLike}
-          
-        >Like</button>
-      </div>
+  const handleLike = async () => {
+    let newLikes = likes + 1;
+    setLikes(newLikes);
+
+    const id = +book.id;
+    const response = await fetch(`/api/increase-likes?id=${id}&likes=${newLikes}`);
+    const data = await response.json();
+}
+
+return (
+    <div className="border rounded-lg p-4">
+        <img src={tune.img_url} className="rounded-lg" />
+        <Link href={`/single-book/${tune.id}`} className="text-xl font-medium">
+            {tune.title}
+        </Link>
+        <p className="text-gray-700">{tune.artist}</p>
+        <button
+            onClick={handleLike}
+            type="button"
+            className="bg-blue-500 px-2 py-1 rounded text-white"
+        >
+            Like ({likes} likes)
+        </button>
     </div>
-  )
+)
 }
