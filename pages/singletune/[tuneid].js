@@ -3,6 +3,7 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react";
 import Hero from "@/components/homepage/hero";
 import Footer from "@/components/shared/Footer";
+import { Content } from "@/components/shared/Content";
 
 export default function SingleTune() {
     const router = useRouter();
@@ -33,7 +34,7 @@ export default function SingleTune() {
     )
   }
   
-  
+
   return(
         <div className="w-full  max-w-6xl mx-auto"> 
             <NavigationBar></NavigationBar>
@@ -42,6 +43,12 @@ export default function SingleTune() {
                 name = {tune.title}
                 subtitle = {tune.artist}
             />
+            <Content>
+                <div className="w-full flex flex-col"></div>
+                     <a href={tune.linkToPurchase} target="_blank" className="w-full">
+                        Click here to purchase
+                     </a>
+            </Content>
 
             <Footer
                 title="Next Tune"
