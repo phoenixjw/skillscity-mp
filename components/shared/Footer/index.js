@@ -1,13 +1,11 @@
 import Link from "next/link";
 
-export default function Footer({ href, title}) {
+export default function Footer({ href, title }) {
     return (
         <div className="w-full max-w-6xl mx-auto mt-8">
-            <link href={href}>
+            <Link href={href}>
                 Go to {title}
-            </link>
+            </Link>
         </div>
     )
-
-
 }

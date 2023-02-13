@@ -1,0 +1,52 @@
+import NavigationBar from "@/components/nav-bar";
+import { useRouter } from "next/router"
+import { useEffect, useState } from "react";
+import Hero from "@/components/homepage/hero";
+import Footer from "@/components/shared/Footer";
+
+export default function SingleTune() {
+    const router = useRouter();
+    const [tune,setTunes] = useState(null);
+    const {tuneid} = router.query;
+    console.log("router ds",tuneid)
+
+    useEffect(() => {
+        if(!tuneid) return;
+
+        getTune(tuneid)
+    }, [tuneid])
+    // Dependancy array included here, so that when when value of tune id changes, Next.js knows to fetch new data from api.
+
+  const getTune = async (id) => {
+      const response = await fetch(`/api/tunes-by-id?id=${id}`);
+      const data = await response.json();
+      const {tune} = data;
+      setTunes(tune);
+  }
+  
+  console.log(tune)
+//   console.log(tune.title)
+  
+  if(!tune){
+    return (
+        <div>loading...</div>
+    )
+  }
+  
+  
+  return(
+        <div className="w-full  max-w-6xl mx-auto"> 
+            <NavigationBar></NavigationBar>
+            <Hero
+                imgURL={tune.imgUrl}
+                name = {tune.title}
+                subtitle = {tune.artist}
+            />
+
+            <Footer
+                title="Next Tune"
+                href={`/singletune/${parseInt(tune.id) + 1}`}
+            />
+        </div>
+    )
+}
