@@ -9,7 +9,7 @@ export default function MusicItem({tune}){
         setLikes(newLikes);
     
 
-    const id =+book.id;
+    const id =+tune.id;
     const response = await fetch(`/api/increase-likes?id=${id}&likes=${newLikes}`);
     const data = response.json();
 
