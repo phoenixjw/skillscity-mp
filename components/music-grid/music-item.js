@@ -18,7 +18,9 @@ export default function MusicItem({tune}){
 return (
     <div className="border rounded-lg p-4">
         <img src={tune.img_url} className="rounded-lg"></img>
-        <p className="text-xl font-medium">{tune.title}</p>
+        <Link href={`/singletune/${tune.id}`} className="text xl font-medium">
+        {tune.title}
+        </Link>
         <p className="text-gray-700">{tune.artist}</p>
         <button
             onClick={handleLike}
