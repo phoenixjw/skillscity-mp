@@ -1,7 +1,4 @@
 import sql from "@/utils/postgres";
-import { PrismaClient } from '@prisma/client/runtime/library'
-
-
 
 export default async function handler(req, res) {
 
