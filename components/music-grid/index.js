@@ -1,6 +1,7 @@
 import MusicItem from "./music-item";
 import { initialSongs } from "./music";
 import { useEffect, useState } from "react";
+import { PrimsaClient } from "@prisma/client"
 
 
 export default function MusicGrid() {
@@ -10,7 +11,7 @@ export default function MusicGrid() {
       getTunes();
   }, []);
 
-  const getTunes = async () => {
+  const getTunes = async () => { 
       const response = await fetch(`/api/books`);
       const data = await response.json();
       setTunes(data);

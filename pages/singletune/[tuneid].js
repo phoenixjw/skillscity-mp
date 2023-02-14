@@ -39,7 +39,7 @@ export default function SingleTune() {
         <div className="w-full  max-w-6xl mx-auto"> 
             <NavigationBar></NavigationBar>
             <Hero
-                imgURL={tune.imgUrl}
+                imgURL={tune.img_url}
                 name = {tune.title}
                 subtitle = {tune.artist}
             />
