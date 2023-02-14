@@ -45,7 +45,7 @@ export default function SingleTune() {
             />
             <Content>
                 <div className="w-full flex flex-col"></div>
-                     <a href={tune.linkToPurchase} target="_blank" className="w-full">
+                     <a href={tune.link_to_purchase} target="_blank" className="w-full">
                         Click here to purchase
                      </a>
             </Content>
