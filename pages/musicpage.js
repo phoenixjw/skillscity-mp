@@ -1,7 +1,6 @@
 import NavigationBar from "@/components/nav-bar";
 import MusicGrid from "@/components/music-grid";
 import Hero from "@/components/homepage/hero";
-import Image from "next/image";
 
 export function MusicPage() {
     return (
