@@ -28,13 +28,16 @@ export function Home() {
     </Content>
    
     <br></br>
-
+    <div className="hidden md:block">
     <button 
     className="items-center bg-blue-500 rounded-lg"
     onClick={handleClick}
     >
       Click Me!
     </button>
+    </div>
+
+
   </div>
   </div>
 
