@@ -21,10 +21,10 @@
 //         const message = event.target.value;
 //         setMessage(message);
 //     }
-//  export default function Contact() {
+ export  function Contact() {
 
 //             <Content>
-//                 <form className="flex flex-col space-y-3">
+//                 <form className="flex flex-col space-y-3 w-full">
 //                     <input
 //                     <Input
 //                         placeholder="Name"
@@ -61,4 +61,5 @@
 //                         </p>)
 //                         :
 //                         null
-//                     }
+                    }
+export default Contact
