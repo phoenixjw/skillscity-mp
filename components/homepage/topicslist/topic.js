@@ -4,6 +4,7 @@ export default [
     "effect hook",
     "Next.js",
     "node.js",
-    "git",
-    "react component"
+    "Git",
+    "React components",
+    "Mobile resonsive design"
 ];
