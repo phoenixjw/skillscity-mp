@@ -1,6 +1,7 @@
 import NavigationBar from "@/components/nav-bar";
 import MusicGrid from "@/components/music-grid";
-import Hero from "@/components/homepage/hero";
+import Header from "@/components/shared/Header";
+
 
 export function MusicPage() {
     return (
@@ -8,7 +9,7 @@ export function MusicPage() {
       <div className="w-full max-w-6xl mx-auto">
       <NavigationBar></NavigationBar>
 
-      <Hero name='Music'></Hero>
+      <Header name="Music"/>
       <MusicGrid></MusicGrid>
       </div>
       
