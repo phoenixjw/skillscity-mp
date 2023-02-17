@@ -1,3 +1,4 @@
+import Input from "@/components/Forms/input";
 import NavigationBar from "@/components/nav-bar";
 import Content from "@/components/shared/Content";
 import Header from "@/components/shared/Header";
@@ -44,19 +45,16 @@ export default function contact() {
 
             <Content>
                 <form className="flex flex-col space-y-3">
-                    <input
-                    placeholder="Name"
-                    className="bg-gray-200 py-3 px-6 w-96 rounded"
-                    value={name}
-                    onChange={handleChangeName}
-                    
+                    <Input
+                        placeholder = "Name"
+                        value = {name}
+                        onChange={handleChangeName}
                     />
 
-                    <input
-                    placeholder="Email"
-                    className="bg-gray-200 py-3 px-6 w-96"
-                    value={email}
-                    onChange={handleChangeEmail}
+                    <Input
+                        placeholder = "Email"
+                        value = {email}
+                        onChange={handleChangeEmail}
                     />
 
                     <textarea
