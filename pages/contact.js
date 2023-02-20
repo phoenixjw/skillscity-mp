@@ -10,16 +10,7 @@ export default function contact() {
     const [message, setMessage] = useState("");
     const [showSuccess, setShowSuccess] = useState(false);
 
-    const handleChangeName = (event) => {
-        const name = event.target.value;
-        setName(name);
-    }
-
-    const handleChangeEmail = (event) => {
-        const email = event.target.value;
-        setEmail(email);
-    }
-
+  
     const handleChangeMessage = (event) => {
         const message = event.target.value;
         setMessage(message);
@@ -48,13 +39,13 @@ export default function contact() {
                     <Input
                         placeholder = "Name"
                         value = {name}
-                        onChange={handleChangeName}
+                        onChange={(value) => setName(value)}
                     />
 
                     <Input
                         placeholder = "Email"
                         value = {email}
-                        onChange={handleChangeEmail}
+                        onChange= {(value) => setEmail(value)}
                     />
 
                     <textarea
