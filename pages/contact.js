@@ -2,6 +2,7 @@ import Input from "@/components/Forms/input";
 import NavigationBar from "@/components/nav-bar";
 import Content from "@/components/shared/Content";
 import Header from "@/components/shared/Header";
+
 import { useState } from "react";
 
 export default function contact() {
@@ -32,7 +33,7 @@ export default function contact() {
     return (
         <div className="w-full">
             <NavigationBar></NavigationBar>
-            <Header name="Contact"/>
+            <Header name = "Contact"></Header>
 
             <Content>
                 <form className="flex flex-col space-y-3">
