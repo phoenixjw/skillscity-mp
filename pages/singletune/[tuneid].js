@@ -32,7 +32,7 @@ export default function SingleTune() {
   
   if(!tune){
     return (
-        <div>Loader</div>    
+        <div>Loading...</div>    
     )
   }
   
