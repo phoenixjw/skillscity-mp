@@ -5,6 +5,8 @@ import Hero from "@/components/homepage/hero";
 import Footer from "@/components/shared/Footer";
 import Content from "@/components/shared/Content";
 
+
+
 export default function SingleTune() {
     const router = useRouter();
     const [tune,setTunes] = useState(null);
@@ -30,7 +32,7 @@ export default function SingleTune() {
   
   if(!tune){
     return (
-        <div>loading...</div>
+        <div>Loader</div>    
     )
   }
   
