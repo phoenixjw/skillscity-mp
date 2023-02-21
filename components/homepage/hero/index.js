@@ -9,7 +9,7 @@ export default function Hero ({imgURL, name, subtitle}) {
         </div>
         <div className="w-full text-center md:text-left">
         <h1 
-            className = "font-bold text-6xl py-5 text-gray-700 s"
+            className = "font-bold text-6xl py-5 text-gray-700 "
         >
           {name}
         </h1>

@@ -1,22 +1,21 @@
 [
-    {
+  {   
       "id":"1",
-      "title": "Information Overload",
-      "artist": "Josh Baker"
-      
-      
-    },
-    {
+      "artist": "Josh Baker",
+      "title": "Information overload",
+      "img_url": "/assets/informationOve.jpg"
+  },
+  {   
       "id":"2",
-      "title": "Where are you",
-      "artist": "Burnski"
-     
-    },
-    {
+      "artist": "Ingi Visons",
+      "title": "RJG",
+      "img_url": "/assets/ingi.jpg"
+  },
+  {   
       "id":"3",
-      "title": "Brock Wild",
-      "artist": "Sebo K"
-     
-    }
-  ]
+      "artist": "Sebo K",
+      "title": "Brock wild",
+      "img_url": "/assets/seboK.jpg"
+  }
 
+]

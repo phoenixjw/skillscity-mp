@@ -17,7 +17,7 @@ export default function MusicItem({tune}){
 
 return (
     <div className="border rounded-lg p-4">
-        <img src={tune.img_url} className="rounded-lg"></img>
+        <img src={tune.img_url} className="rounded-lg w-40 h-40"></img>
         <Link href={`/singletune/${tune.id}`} className="text xl font-medium">
         {tune.title}
         </Link>

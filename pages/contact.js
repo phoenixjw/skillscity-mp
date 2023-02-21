@@ -32,6 +32,7 @@ export default function contact() {
 
     return (
         <div className="w-full">
+            <div className="w-full max-w-6xl mx-auto">
             <NavigationBar></NavigationBar>
             <Header name = "Contact"></Header>
 
@@ -80,6 +81,7 @@ export default function contact() {
             </Content>
 
 
+        </div>
         </div>
 
     )

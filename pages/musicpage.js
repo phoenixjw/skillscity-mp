@@ -11,6 +11,7 @@ export function MusicPage() {
       <NavigationBar></NavigationBar>
 
       <Header name="Music"></Header>
+      <p className="py-2">Below are listed some of my favourite House and Garage tunes. Click on each one and follow the links on each page to either listen or make a purchase (subject to availability).</p>
       <MusicGrid></MusicGrid>
       </div>
       

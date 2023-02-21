@@ -1,4 +1,4 @@
-import Input from "@/components/forms/input";
+import Input from "@/components/Forms/Input";
 import NavigationBar from "@/components/nav-bar";
 import LocationItem from "@/components/search/location-item";
 import Content from "@/components/shared/Content";

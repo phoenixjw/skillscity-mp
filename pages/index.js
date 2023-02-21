@@ -4,7 +4,7 @@ import Bio from "@/components/homepage/bio"
 import Topic from "@/components/topic"
 import Image from "next/image";
 import { Router, useRouter } from "next/router";
-import { Content } from "@/components/shared/Content";
+import Content  from "@/components/shared/Content";
 import Topics from "@/components/homepage/topicslist";
 
 
