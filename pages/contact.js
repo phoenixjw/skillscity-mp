@@ -1,4 +1,4 @@
-import Input from "@/components/Forms/input";
+import Input from "@/components/Forms/Input";
 import NavigationBar from "@/components/nav-bar";
 import Content from "@/components/shared/Content";
 import Header from "@/components/shared/Header";
