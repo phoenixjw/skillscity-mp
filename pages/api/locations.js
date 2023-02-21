@@ -5,7 +5,7 @@ export default async function handler(req,res){
 
     let locations = [];
 
-    if (search === null || serach === undefined) {
+    if (search === null || search === undefined) {
         locations = await sql `
 
         select * from locations
