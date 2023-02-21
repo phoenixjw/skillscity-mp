@@ -8,9 +8,8 @@ export default function NavigationBar () {
             </div> */}
             <NavigationItem ahref="/" name = "Home"></NavigationItem>
             <NavigationItem ahref="/musicpage" name = "Music"></NavigationItem>
-            <NavigationItem ahref="/single-book" name = "Book"></NavigationItem>
             <NavigationItem ahref="/search" name = "Search"></NavigationItem>
-            <NavigationItem ahref="/contact" name = "Contact">name = "Contact"</NavigationItem>
+            <NavigationItem ahref="/contact" name = "Contact"></NavigationItem>
 
         </div>
     )
