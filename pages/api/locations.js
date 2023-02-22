@@ -1,3 +1,4 @@
+import pg from "@/utils/pg";
 import sql from "@/utils/postgres";
 
 export default async function handler(req,res){
@@ -14,12 +15,12 @@ export default async function handler(req,res){
     }
 
     else {
-        locations = await sql `
+        locations = await pg.execute (`
 
         select * from locations
-        where title = ${search}
+        where title LIKE '%${search}%'
         
-        `;
+        `);
     }
     
 
