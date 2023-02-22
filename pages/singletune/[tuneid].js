@@ -49,7 +49,7 @@ export default function SingleTune() {
             <Content>
                 <div className="w-full flex flex-col"></div>
                      <a href={tune.link_to_purchase} target="_blank" className="w-full">
-                        Click here Listen or Purhase
+                        Click here to Purhase
                      </a>
                      <YouTube videoId={tune.yt_link} opts="w-40 h-40"  />
             </Content>
