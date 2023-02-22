@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Hero from "@/components/homepage/hero";
 import Footer from "@/components/shared/Footer";
 import Content from "@/components/shared/Content";
+import YouTube from "react-youtube";
 
 
 
@@ -48,8 +49,9 @@ export default function SingleTune() {
             <Content>
                 <div className="w-full flex flex-col"></div>
                      <a href={tune.link_to_purchase} target="_blank" className="w-full">
-                        Click here to purchase
+                        Click here Listen or Purhase
                      </a>
+                     <YouTube videoId="sTnm5jvjgjM" opts="w-40 h-40"  />
             </Content>
 
             <Footer
