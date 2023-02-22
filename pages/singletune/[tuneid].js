@@ -51,7 +51,7 @@ export default function SingleTune() {
                      <a href={tune.link_to_purchase} target="_blank" className="w-full">
                         Click here Listen or Purhase
                      </a>
-                     <YouTube videoId="sTnm5jvjgjM" opts="w-40 h-40"  />
+                     <YouTube videoId={tune.yt_link} opts="w-40 h-40"  />
             </Content>
 
             <Footer
