@@ -54,10 +54,16 @@ export default function SingleTune() {
                      <YouTube videoId={tune.yt_link} opts="w-40 h-40"  />
             </Content>
 
+            <div className=" w-full max-w-6xl flex flex row">
             <Footer
-                title="Next Tune"
+                title="<< Previous Tune"
+                href={`/singletune/${parseInt(tune.id) - 1}`}
+            />
+            <Footer
+                title="Next Tune >>"
                 href={`/singletune/${parseInt(tune.id) + 1}`}
             />
+            </div>
         </div>
     )
 }
