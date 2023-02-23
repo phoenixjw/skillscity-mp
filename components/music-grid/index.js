@@ -18,7 +18,7 @@ export default function MusicGrid() {
   }
 
   return (
-      <div className="w-full grid grid-cols-3 gap-4">
+      <div className="w-full grid grid-cols-3 gap-4 sm: grid grid-cols-1 ">
           {tunes.map((tune, index) => (
               <MusicItem key={index} tune={tune} />
           ))}
