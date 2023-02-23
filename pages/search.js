@@ -25,11 +25,12 @@ export default function Search() {
         setLocations(data);
     }
 
-    const filteredLocations = async () => {
-        if (!input) {
-            getLocations();
-            return;
-        }
+    const filteredLocations = async (input) => {
+        setInput(input);
+        // if (!input) {
+        //     getLocations();
+        //     return;
+        // }
 
         const response = await fetch(`/api/locations?search=${input}`, {
             method: "GET",
@@ -54,7 +55,7 @@ export default function Search() {
                  <div className="w-full md:w-6/12 lg:w-4/12 flex flex-row space-x-2">
                      <Input
                          value={input}
-                         onChange={value => setInput(value)}
+                         onChange={value => filteredLocations(value)}
                      />
                      <button
                          className="bg-blue-500 text-white px-6 py-2 rounded-md"
