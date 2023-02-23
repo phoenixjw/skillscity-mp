@@ -2,7 +2,7 @@ export default function Hero ({imgURL, name, subtitle}) {
     return (
     <div className="w-full max-w-6xl mx-auto">
       <div className="w-full flex flex-col py-4 space-y-4 md:flex-row md:space-x-4">
-        <div className="w-48">
+        <div className="w-48 mx-auto sm: flex justify-center">
         <img src={imgURL} className="rounded-lg"/> 
           
           
